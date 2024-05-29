@@ -127,6 +127,9 @@ extension LoginViewController {
         
         if username == "Kevin" && password == "Welcome" {
             signInButton.configuration?.showsActivityIndicator = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                self.navigationController?.pushViewController(OnboardingContainerViewController(), animated: true)
+            }
         } else {
             configureView(withMessage: "Incorrect username / password")
         }
