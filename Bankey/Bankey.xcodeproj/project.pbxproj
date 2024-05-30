@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		010B0CE82C070F380014CD16 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010B0CE72C070F380014CD16 /* OnboardingViewController.swift */; };
+		010B0CEB2C083C510014CD16 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010B0CEA2C083C510014CD16 /* DummyViewController.swift */; };
+		010B0CEE2C0882430014CD16 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010B0CED2C0882430014CD16 /* LocalState.swift */; };
 		011727BD2C06D4BE0031F036 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011727BC2C06D4BE0031F036 /* OnboardingContainerViewController.swift */; };
 		01AF23642C05911B00648299 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AF23632C05911B00648299 /* LoginView.swift */; };
 		01B4581B2C04CC6C00329203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4581A2C04CC6C00329203 /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		010B0CE72C070F380014CD16 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		010B0CEA2C083C510014CD16 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		010B0CED2C0882430014CD16 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		011727BC2C06D4BE0031F036 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		01AF23632C05911B00648299 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		01B458172C04CC6C00329203 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010B0CEC2C0882320014CD16 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				010B0CED2C0882430014CD16 /* LocalState.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		011727BB2C06D49D0031F036 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +81,7 @@
 			children = (
 				01B4581E2C04CC6C00329203 /* LoginViewController.swift */,
 				01AF23632C05911B00648299 /* LoginView.swift */,
+				010B0CEA2C083C510014CD16 /* DummyViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -92,6 +105,7 @@
 		01B458192C04CC6C00329203 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				010B0CEC2C0882320014CD16 /* Utils */,
 				011727BB2C06D49D0031F036 /* Onboarding */,
 				01AF23622C05910600648299 /* Login */,
 				01B4581A2C04CC6C00329203 /* AppDelegate.swift */,
@@ -171,12 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010B0CEB2C083C510014CD16 /* DummyViewController.swift in Sources */,
 				01B4581F2C04CC6C00329203 /* LoginViewController.swift in Sources */,
 				010B0CE82C070F380014CD16 /* OnboardingViewController.swift in Sources */,
 				01B4581B2C04CC6C00329203 /* AppDelegate.swift in Sources */,
 				01AF23642C05911B00648299 /* LoginView.swift in Sources */,
 				011727BD2C06D4BE0031F036 /* OnboardingContainerViewController.swift in Sources */,
 				01B4581D2C04CC6C00329203 /* SceneDelegate.swift in Sources */,
+				010B0CEE2C0882430014CD16 /* LocalState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

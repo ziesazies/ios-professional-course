@@ -9,11 +9,21 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    var window: UIWindow?
+    let loginViewController = LoginViewController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        let window = UIWindow(windowScene: windowScene)
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        self.window = window
+        window.makeKeyAndVisible()
+        window.backgroundColor = .systemBackground
+        
+        loginViewController.delegate = self
+        
+        window.rootViewController = loginViewController
         return true
     }
 
@@ -34,3 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: LoginViewControllerDelegate {
+    func didLogin() {
+        print("Did login")
+    }
+}
