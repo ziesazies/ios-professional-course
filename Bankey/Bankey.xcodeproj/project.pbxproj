@@ -22,6 +22,7 @@
 		01B4D1F22C0D741E00F77300 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4D1F12C0D741E00F77300 /* AccountSummaryViewController.swift */; };
 		01B4D1F42C0D79BB00F77300 /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4D1F32C0D79BB00F77300 /* AccountSummaryHeaderView.swift */; };
 		01B4D1F62C0D79DF00F77300 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B4D1F52C0D79DF00F77300 /* AccountSummaryHeaderView.xib */; };
+		01B4D1FA2C0DB5EB00F77300 /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4D1F92C0DB5EB00F77300 /* AccountSummaryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		01B4D1F12C0D741E00F77300 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		01B4D1F32C0D79BB00F77300 /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		01B4D1F52C0D79DF00F77300 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
+		01B4D1F92C0DB5EB00F77300 /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,11 +129,28 @@
 		01B4D1F02C0D73FD00F77300 /* AccountSummary */ = {
 			isa = PBXGroup;
 			children = (
+				01B4D1F72C0DB58100F77300 /* Header */,
+				01B4D1F82C0DB58B00F77300 /* Cells */,
 				01B4D1F12C0D741E00F77300 /* AccountSummaryViewController.swift */,
+			);
+			name = AccountSummary;
+			sourceTree = "<group>";
+		};
+		01B4D1F72C0DB58100F77300 /* Header */ = {
+			isa = PBXGroup;
+			children = (
 				01B4D1F32C0D79BB00F77300 /* AccountSummaryHeaderView.swift */,
 				01B4D1F52C0D79DF00F77300 /* AccountSummaryHeaderView.xib */,
 			);
-			name = AccountSummary;
+			name = Header;
+			sourceTree = "<group>";
+		};
+		01B4D1F82C0DB58B00F77300 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				01B4D1F92C0DB5EB00F77300 /* AccountSummaryCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				010B0CEB2C083C510014CD16 /* DummyViewController.swift in Sources */,
+				01B4D1FA2C0DB5EB00F77300 /* AccountSummaryCell.swift in Sources */,
 				01B4581F2C04CC6C00329203 /* LoginViewController.swift in Sources */,
 				010B0CF02C08A2550014CD16 /* UIViewController+Utils.swift in Sources */,
 				01B4D1F42C0D79BB00F77300 /* AccountSummaryHeaderView.swift in Sources */,
