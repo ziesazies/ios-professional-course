@@ -19,6 +19,7 @@
 		01B458222C04CC6C00329203 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 01B458212C04CC6C00329203 /* Base */; };
 		01B458242C04CC6E00329203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B458232C04CC6E00329203 /* Assets.xcassets */; };
 		01B458272C04CC6E00329203 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 01B458262C04CC6E00329203 /* Base */; };
+		01B4D1F22C0D741E00F77300 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4D1F12C0D741E00F77300 /* AccountSummaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		01B458232C04CC6E00329203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01B458262C04CC6E00329203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01B458282C04CC6E00329203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B4D1F12C0D741E00F77300 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +110,22 @@
 			isa = PBXGroup;
 			children = (
 				01B4581A2C04CC6C00329203 /* AppDelegate.swift */,
+				010B0CF12C08A4790014CD16 /* MainViewController.swift */,
 				01AF23622C05910600648299 /* Login */,
 				011727BB2C06D49D0031F036 /* Onboarding */,
+				01B4D1F02C0D73FD00F77300 /* AccountSummary */,
 				010B0CEC2C0882320014CD16 /* Utils */,
 				01AF23602C05906E00648299 /* Files */,
-				010B0CF12C08A4790014CD16 /* MainViewController.swift */,
 			);
 			path = Bankey;
+			sourceTree = "<group>";
+		};
+		01B4D1F02C0D73FD00F77300 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				01B4D1F12C0D741E00F77300 /* AccountSummaryViewController.swift */,
+			);
+			name = AccountSummary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 				01B4581B2C04CC6C00329203 /* AppDelegate.swift in Sources */,
 				01AF23642C05911B00648299 /* LoginView.swift in Sources */,
 				010B0CF22C08A4790014CD16 /* MainViewController.swift in Sources */,
+				01B4D1F22C0D741E00F77300 /* AccountSummaryViewController.swift in Sources */,
 				011727BD2C06D4BE0031F036 /* OnboardingContainerViewController.swift in Sources */,
 				010B0CEE2C0882430014CD16 /* LocalState.swift in Sources */,
 			);
