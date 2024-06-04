@@ -13,6 +13,8 @@
 		010B0CF02C08A2550014CD16 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010B0CEF2C08A2550014CD16 /* UIViewController+Utils.swift */; };
 		010B0CF22C08A4790014CD16 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010B0CF12C08A4790014CD16 /* MainViewController.swift */; };
 		011727BD2C06D4BE0031F036 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011727BC2C06D4BE0031F036 /* OnboardingContainerViewController.swift */; };
+		019CCD7D2C0ED15E003D98DD /* DecimalUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019CCD7C2C0ED15E003D98DD /* DecimalUtil.swift */; };
+		019CCD7F2C0ED1A3003D98DD /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019CCD7E2C0ED1A3003D98DD /* CurrencyFormatter.swift */; };
 		01AF23642C05911B00648299 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AF23632C05911B00648299 /* LoginView.swift */; };
 		01B4581B2C04CC6C00329203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4581A2C04CC6C00329203 /* AppDelegate.swift */; };
 		01B4581F2C04CC6C00329203 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4581E2C04CC6C00329203 /* LoginViewController.swift */; };
@@ -32,6 +34,8 @@
 		010B0CEF2C08A2550014CD16 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		010B0CF12C08A4790014CD16 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		011727BC2C06D4BE0031F036 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
+		019CCD7C2C0ED15E003D98DD /* DecimalUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtil.swift; sourceTree = "<group>"; };
+		019CCD7E2C0ED1A3003D98DD /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		01AF23632C05911B00648299 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		01B458172C04CC6C00329203 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B4581A2C04CC6C00329203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 			children = (
 				010B0CED2C0882430014CD16 /* LocalState.swift */,
 				010B0CEF2C08A2550014CD16 /* UIViewController+Utils.swift */,
+				019CCD7C2C0ED15E003D98DD /* DecimalUtil.swift */,
+				019CCD7E2C0ED1A3003D98DD /* CurrencyFormatter.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -228,7 +234,9 @@
 				010B0CEB2C083C510014CD16 /* DummyViewController.swift in Sources */,
 				01B4D1FA2C0DB5EB00F77300 /* AccountSummaryCell.swift in Sources */,
 				01B4581F2C04CC6C00329203 /* LoginViewController.swift in Sources */,
+				019CCD7D2C0ED15E003D98DD /* DecimalUtil.swift in Sources */,
 				010B0CF02C08A2550014CD16 /* UIViewController+Utils.swift in Sources */,
+				019CCD7F2C0ED1A3003D98DD /* CurrencyFormatter.swift in Sources */,
 				01B4D1F42C0D79BB00F77300 /* AccountSummaryHeaderView.swift in Sources */,
 				010B0CE82C070F380014CD16 /* OnboardingViewController.swift in Sources */,
 				01B4581B2C04CC6C00329203 /* AppDelegate.swift in Sources */,
