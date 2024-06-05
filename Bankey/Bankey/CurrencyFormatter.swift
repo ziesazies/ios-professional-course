@@ -48,7 +48,7 @@ struct CurrencyFormatter {
         return cents
     }
     
-    private func dollarsFormatted(_ dollars: Double) -> String {
+    func dollarsFormatted(_ dollars: Double) -> String {
         let formatter = NumberFormatter()
         formatter.locale = Locale(identifier: "en_US")
         formatter.numberStyle = .currency
