@@ -11,6 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountSummaryHeaderView" customModule="Bankey" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="ASC-z3-ipo"/>
+                <outlet property="dateLabel" destination="eYy-aQ-vol" id="yWv-7K-Nrx"/>
+                <outlet property="nameLabel" destination="c63-fr-AXR" id="2Wn-iY-p2j"/>
+                <outlet property="welcomeLabel" destination="RpW-WY-VBV" id="5JS-7X-R7R"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -25,19 +28,19 @@
                             <rect key="frame" x="0.0" y="0.0" width="234" height="112"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Bankey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UU8-88-yzw">
-                                    <rect key="frame" x="0.0" y="0.0" width="234" height="27"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="234" height="0.0"/>
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good morning," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpW-WY-VBV">
-                                    <rect key="frame" x="0.0" y="35" width="234" height="20.333333333333329"/>
+                                    <rect key="frame" x="0.0" y="8.0000000000000018" width="234" height="17.666666666666671"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jonathan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c63-fr-AXR">
-                                    <rect key="frame" x="0.0" y="63.333333333333336" width="234" height="20.333333333333336"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c63-fr-AXR" userLabel="Jonathan">
+                                    <rect key="frame" x="0.0" y="33.666666666666664" width="234" height="49.999999999999993"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>

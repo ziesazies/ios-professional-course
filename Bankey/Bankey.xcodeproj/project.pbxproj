@@ -14,6 +14,8 @@
 		010B0CF22C08A4790014CD16 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010B0CF12C08A4790014CD16 /* MainViewController.swift */; };
 		011727BD2C06D4BE0031F036 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011727BC2C06D4BE0031F036 /* OnboardingContainerViewController.swift */; };
 		0174FCDE2C1AE4B50027A8E9 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0174FCDD2C1AE4B50027A8E9 /* ShakeyBellView.swift */; };
+		0174FCE02C1B54930027A8E9 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0174FCDF2C1B54930027A8E9 /* Date+Utils.swift */; };
+		0174FCE22C1B56130027A8E9 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0174FCE12C1B56130027A8E9 /* AccountSummaryViewController+Networking.swift */; };
 		019CCD7D2C0ED15E003D98DD /* DecimalUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019CCD7C2C0ED15E003D98DD /* DecimalUtil.swift */; };
 		019CCD7F2C0ED1A3003D98DD /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019CCD7E2C0ED1A3003D98DD /* CurrencyFormatter.swift */; };
 		01A6B9872C116A9600837AC4 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6B9862C116A9600837AC4 /* NSNotificationName.swift */; };
@@ -49,6 +51,8 @@
 		010B0CF12C08A4790014CD16 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		011727BC2C06D4BE0031F036 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		0174FCDD2C1AE4B50027A8E9 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
+		0174FCDF2C1B54930027A8E9 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
+		0174FCE12C1B56130027A8E9 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 		019CCD7C2C0ED15E003D98DD /* DecimalUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtil.swift; sourceTree = "<group>"; };
 		019CCD7E2C0ED1A3003D98DD /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		01A6B9862C116A9600837AC4 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 				019CCD7E2C0ED1A3003D98DD /* CurrencyFormatter.swift */,
 				01A6B9862C116A9600837AC4 /* NSNotificationName.swift */,
 				01CE58CE2C16A477008423CD /* UITextField+SecureToggle.swift */,
+				0174FCDF2C1B54930027A8E9 /* Date+Utils.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 				01B4D1F72C0DB58100F77300 /* Header */,
 				01B4D1F82C0DB58B00F77300 /* Cells */,
 				01B4D1F12C0D741E00F77300 /* AccountSummaryViewController.swift */,
+				0174FCE12C1B56130027A8E9 /* AccountSummaryViewController+Networking.swift */,
 			);
 			name = AccountSummary;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				010B0CEB2C083C510014CD16 /* DummyViewController.swift in Sources */,
+				0174FCE02C1B54930027A8E9 /* Date+Utils.swift in Sources */,
 				01B4D1FA2C0DB5EB00F77300 /* AccountSummaryCell.swift in Sources */,
 				01B4581F2C04CC6C00329203 /* LoginViewController.swift in Sources */,
 				019CCD7D2C0ED15E003D98DD /* DecimalUtil.swift in Sources */,
@@ -334,6 +341,7 @@
 				01B4D1F22C0D741E00F77300 /* AccountSummaryViewController.swift in Sources */,
 				011727BD2C06D4BE0031F036 /* OnboardingContainerViewController.swift in Sources */,
 				010B0CEE2C0882430014CD16 /* LocalState.swift in Sources */,
+				0174FCE22C1B56130027A8E9 /* AccountSummaryViewController+Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
