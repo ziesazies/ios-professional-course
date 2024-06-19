@@ -15,11 +15,12 @@ class AccountSummaryViewController: UIViewController {
     
     // View Models
     var header = AccountSummaryHeaderView.ViewModel(welcomeMessage: "Welcome", name: "", date: Date())
-    
     var accountCellViewModels: [AccountSummaryCell.ViewModel] = []
     
+    // Components
     var tableView = UITableView()
     var headerView = AccountSummaryHeaderView(frame: .zero)
+    let refreshControl = UIRefreshControl()
     
 
     lazy var logoutBarButtonItem: UIBarButtonItem = {
@@ -39,6 +40,7 @@ extension AccountSummaryViewController {
         setupNavigationBar()
         setupTableView()
         setupTableHeaderView()
+        setupRefreshControl()
         fetchData()
     }
     
@@ -101,8 +103,10 @@ extension AccountSummaryViewController {
         
         let group = DispatchGroup()
         
+        let userId = String(Int.random(in: 1..<4))
+        
         group.enter()
-        fetchProfile(forUserId: "2") { result in
+        fetchProfile(forUserId: userId) { result in
             switch result {
             case .success(let profile):
                 self.profile = profile
@@ -127,6 +131,7 @@ extension AccountSummaryViewController {
         
         group.notify(queue: .main) {
             self.tableView.reloadData()
+            self.refreshControl.endRefreshing()
         }
     }
     
@@ -140,11 +145,21 @@ extension AccountSummaryViewController {
             AccountSummaryCell.ViewModel(acountType: $0.type, accountName: $0.name, balance: $0.amount)
         }
     }
+    
+    private func setupRefreshControl() {
+        refreshControl.tintColor = appColor
+        refreshControl.addTarget(self, action: #selector(refreshContent), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+    }
 }
 
 // MARK: - Actions
 extension AccountSummaryViewController {
     @objc private func logoutTapped(_ selector: UIBarButtonItem) {
         NotificationCenter.default.post(name: .logout, object: nil)
+    }
+    
+    @objc func refreshContent(_ sender: Any) {
+        fetchData()
     }
 }
