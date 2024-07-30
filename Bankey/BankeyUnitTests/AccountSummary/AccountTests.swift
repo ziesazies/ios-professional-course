@@ -18,7 +18,7 @@ class AccountTests: XCTestCase {
     func testCanParse() throws {
         let json = """
         [
-           
+           {
                 "id": "1",
                 "type": "Banking",
                 "name": "Basic Savings",

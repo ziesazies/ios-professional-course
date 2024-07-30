@@ -24,6 +24,8 @@
 		01A6B9872C116A9600837AC4 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6B9862C116A9600837AC4 /* NSNotificationName.swift */; };
 		01AF23642C05911B00648299 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AF23632C05911B00648299 /* LoginView.swift */; };
 		01AF531A2C10CA4600D48714 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AF53192C10CA4600D48714 /* CurrencyFormatterTests.swift */; };
+		01B248FC2C4786A5004CAE71 /* ProfileManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B248FB2C4786A5004CAE71 /* ProfileManageable.swift */; };
+		01B249002C478897004CAE71 /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B248FF2C478897004CAE71 /* AccountSummaryViewControllerTests.swift */; };
 		01B4581B2C04CC6C00329203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4581A2C04CC6C00329203 /* AppDelegate.swift */; };
 		01B4581F2C04CC6C00329203 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4581E2C04CC6C00329203 /* LoginViewController.swift */; };
 		01B458222C04CC6C00329203 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 01B458212C04CC6C00329203 /* Base */; };
@@ -66,6 +68,8 @@
 		01AF23632C05911B00648299 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		01AF53102C10926D00D48714 /* BankeyUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankeyUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01AF53192C10CA4600D48714 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
+		01B248FB2C4786A5004CAE71 /* ProfileManageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManageable.swift; sourceTree = "<group>"; };
+		01B248FF2C478897004CAE71 /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		01B458172C04CC6C00329203 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B4581A2C04CC6C00329203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01B4581E2C04CC6C00329203 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 			children = (
 				0174FCE52C1C3B030027A8E9 /* ProfileTests.swift */,
 				01C9CA6D2C212C1800D50DA6 /* AccountTests.swift */,
+				01B248FF2C478897004CAE71 /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -175,6 +180,14 @@
 				0174FCE32C1C3ADA0027A8E9 /* Utils */,
 			);
 			path = BankeyUnitTests;
+			sourceTree = "<group>";
+		};
+		01B248FA2C47862C004CAE71 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				01B248FB2C4786A5004CAE71 /* ProfileManageable.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 		01B4580E2C04CC6C00329203 = {
@@ -213,6 +226,7 @@
 		01B4D1F02C0D73FD00F77300 /* AccountSummary */ = {
 			isa = PBXGroup;
 			children = (
+				01B248FA2C47862C004CAE71 /* Networking */,
 				01B4D1F12C0D741E00F77300 /* AccountSummaryViewController.swift */,
 				0174FCE12C1B56130027A8E9 /* AccountSummaryViewController+Networking.swift */,
 				01B4D1F72C0DB58100F77300 /* Header */,
@@ -346,6 +360,7 @@
 				01AF531A2C10CA4600D48714 /* CurrencyFormatterTests.swift in Sources */,
 				01C9CA6E2C212C1800D50DA6 /* AccountTests.swift in Sources */,
 				0174FCE62C1C3B030027A8E9 /* ProfileTests.swift in Sources */,
+				01B249002C478897004CAE71 /* AccountSummaryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +378,7 @@
 				010B0CF02C08A2550014CD16 /* UIViewController+Utils.swift in Sources */,
 				019CCD7F2C0ED1A3003D98DD /* CurrencyFormatter.swift in Sources */,
 				01B4D1F42C0D79BB00F77300 /* AccountSummaryHeaderView.swift in Sources */,
+				01B248FC2C4786A5004CAE71 /* ProfileManageable.swift in Sources */,
 				01A6B9872C116A9600837AC4 /* NSNotificationName.swift in Sources */,
 				010B0CE82C070F380014CD16 /* OnboardingViewController.swift in Sources */,
 				0174FCDE2C1AE4B50027A8E9 /* ShakeyBellView.swift in Sources */,

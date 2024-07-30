@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011A2B772C328BE000B2C504 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011A2B762C328BE000B2C504 /* DetailViewController.xib */; };
+		011A2B792C328CEC00B2C504 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A2B782C328CEC00B2C504 /* DetailViewController.swift */; };
+		011A2B7C2C328F6500B2C504 /* DetailMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A2B7A2C328F6500B2C504 /* DetailMoreViewController.swift */; };
+		011A2B7D2C328F6500B2C504 /* DetailMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011A2B7B2C328F6500B2C504 /* DetailMoreViewController.xib */; };
+		011A2B802C32902700B2C504 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A2B7E2C32902700B2C504 /* HomeViewController.swift */; };
+		011A2B812C32902700B2C504 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011A2B7F2C32902700B2C504 /* HomeViewController.xib */; };
 		01F5D4122C3269B5003AAF66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D4112C3269B5003AAF66 /* AppDelegate.swift */; };
 		01F5D4142C3269B5003AAF66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D4132C3269B5003AAF66 /* SceneDelegate.swift */; };
 		01F5D4162C3269B5003AAF66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D4152C3269B5003AAF66 /* ViewController.swift */; };
 		01F5D4192C3269B5003AAF66 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 01F5D4182C3269B5003AAF66 /* Base */; };
 		01F5D41B2C3269B7003AAF66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F5D41A2C3269B7003AAF66 /* Assets.xcassets */; };
 		01F5D41E2C3269B7003AAF66 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 01F5D41D2C3269B7003AAF66 /* Base */; };
+		01F5D4272C326C16003AAF66 /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 01F5D4262C326C16003AAF66 /* FloatingPanel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011A2B762C328BE000B2C504 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		011A2B782C328CEC00B2C504 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		011A2B7A2C328F6500B2C504 /* DetailMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMoreViewController.swift; sourceTree = "<group>"; };
+		011A2B7B2C328F6500B2C504 /* DetailMoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailMoreViewController.xib; sourceTree = "<group>"; };
+		011A2B7E2C32902700B2C504 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		011A2B7F2C32902700B2C504 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		01F5D40E2C3269B5003AAF66 /* POC-InputText-ProgressView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POC-InputText-ProgressView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F5D4112C3269B5003AAF66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01F5D4132C3269B5003AAF66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F5D4272C326C16003AAF66 /* FloatingPanel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,10 +73,16 @@
 				01F5D4112C3269B5003AAF66 /* AppDelegate.swift */,
 				01F5D4132C3269B5003AAF66 /* SceneDelegate.swift */,
 				01F5D4152C3269B5003AAF66 /* ViewController.swift */,
+				011A2B7A2C328F6500B2C504 /* DetailMoreViewController.swift */,
+				011A2B7B2C328F6500B2C504 /* DetailMoreViewController.xib */,
+				011A2B762C328BE000B2C504 /* DetailViewController.xib */,
+				011A2B782C328CEC00B2C504 /* DetailViewController.swift */,
 				01F5D4172C3269B5003AAF66 /* Main.storyboard */,
 				01F5D41A2C3269B7003AAF66 /* Assets.xcassets */,
 				01F5D41C2C3269B7003AAF66 /* LaunchScreen.storyboard */,
 				01F5D41F2C3269B7003AAF66 /* Info.plist */,
+				011A2B7E2C32902700B2C504 /* HomeViewController.swift */,
+				011A2B7F2C32902700B2C504 /* HomeViewController.xib */,
 			);
 			path = "POC-InputText-ProgressView";
 			sourceTree = "<group>";
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = "POC-InputText-ProgressView";
+			packageProductDependencies = (
+				01F5D4262C326C16003AAF66 /* FloatingPanel */,
+			);
 			productName = "POC-InputText-ProgressView";
 			productReference = 01F5D40E2C3269B5003AAF66 /* POC-InputText-ProgressView.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 01F5D4052C3269B5003AAF66;
+			packageReferences = (
+				01F5D4252C326C16003AAF66 /* XCRemoteSwiftPackageReference "FloatingPanel" */,
+			);
 			productRefGroup = 01F5D40F2C3269B5003AAF66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +153,10 @@
 			files = (
 				01F5D41B2C3269B7003AAF66 /* Assets.xcassets in Resources */,
 				01F5D41E2C3269B7003AAF66 /* Base in Resources */,
+				011A2B7D2C328F6500B2C504 /* DetailMoreViewController.xib in Resources */,
 				01F5D4192C3269B5003AAF66 /* Base in Resources */,
+				011A2B772C328BE000B2C504 /* DetailViewController.xib in Resources */,
+				011A2B812C32902700B2C504 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +170,9 @@
 				01F5D4162C3269B5003AAF66 /* ViewController.swift in Sources */,
 				01F5D4122C3269B5003AAF66 /* AppDelegate.swift in Sources */,
 				01F5D4142C3269B5003AAF66 /* SceneDelegate.swift in Sources */,
+				011A2B792C328CEC00B2C504 /* DetailViewController.swift in Sources */,
+				011A2B7C2C328F6500B2C504 /* DetailMoreViewController.swift in Sources */,
+				011A2B802C32902700B2C504 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +329,7 @@
 				INFOPLIST_FILE = "POC-InputText-ProgressView/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +357,7 @@
 				INFOPLIST_FILE = "POC-InputText-ProgressView/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +395,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01F5D4252C326C16003AAF66 /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scenee/FloatingPanel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01F5D4262C326C16003AAF66 /* FloatingPanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01F5D4252C326C16003AAF66 /* XCRemoteSwiftPackageReference "FloatingPanel" */;
+			productName = FloatingPanel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 01F5D4062C3269B5003AAF66 /* Project object */;
 }

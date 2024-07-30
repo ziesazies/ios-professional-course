@@ -6,15 +6,29 @@
 //
 
 import UIKit
+import FloatingPanel
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var homeViewButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func homeViewButtonTapped(_ sender: Any) {
+        let fpc = FloatingPanelController()
+        fpc.backdropView.dismissalTapGestureRecognizer.isEnabled = true
+        fpc.surfaceView.appearance.cornerRadius = 16
+        fpc.surfaceView.grabberHandle.barColor = .clear
+        
+        let vc = DetailViewController()
+        
+        fpc.set(contentViewController: vc)
+        self.present(fpc, animated: true, completion: nil)
+    }
+    
 
     /*
     // MARK: - Navigation

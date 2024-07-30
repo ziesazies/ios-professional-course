@@ -6,24 +6,29 @@
 //
 
 import UIKit
+import FloatingPanel
 
 class DetailViewController: UIViewController {
-
+    
+    @IBOutlet weak var detailVCLabel: UILabel!
+    @IBOutlet weak var detailVCButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func detailVCButtonTapped(_ sender: Any) {
+        
+        let fpc = FloatingPanelController()
+        fpc.backdropView.dismissalTapGestureRecognizer.isEnabled = true
+        fpc.surfaceView.appearance.cornerRadius = 16
+        fpc.surfaceView.grabberHandle.barColor = .clear
+        
+        let vc = DetailMoreViewController()
+        
+        fpc.set(contentViewController: vc)
+        self.present(fpc, animated: true, completion: nil)
     }
-    */
-
 }
