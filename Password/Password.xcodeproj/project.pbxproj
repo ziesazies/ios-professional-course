@@ -11,6 +11,7 @@
 		012F9AAE2C59466100AAAEEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012F9AAD2C59466100AAAEEF /* ViewController.swift */; };
 		012F9AB32C59466300AAAEEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012F9AB22C59466300AAAEEF /* Assets.xcassets */; };
 		012F9AB62C59466300AAAEEF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 012F9AB52C59466300AAAEEF /* Base */; };
+		012F9ABF2C5B37E800AAAEEF /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012F9ABE2C5B37E800AAAEEF /* PasswordTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		012F9AB22C59466300AAAEEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		012F9AB52C59466300AAAEEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		012F9AB72C59466300AAAEEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		012F9ABE2C5B37E800AAAEEF /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				012F9ABD2C59476600AAAEEF /* Files */,
 				012F9AA92C59466100AAAEEF /* AppDelegate.swift */,
+				012F9ABE2C5B37E800AAAEEF /* PasswordTextField.swift */,
 				012F9AAD2C59466100AAAEEF /* ViewController.swift */,
 			);
 			path = Password;
@@ -141,6 +144,7 @@
 			files = (
 				012F9AAE2C59466100AAAEEF /* ViewController.swift in Sources */,
 				012F9AAA2C59466100AAAEEF /* AppDelegate.swift in Sources */,
+				012F9ABF2C5B37E800AAAEEF /* PasswordTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
