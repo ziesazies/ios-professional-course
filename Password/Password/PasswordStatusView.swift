@@ -18,7 +18,7 @@ class PasswordStatusView: UIView {
     let criteriaLabel = UILabel()
     
     // Used to determine if we reset criteria back to empty state (⚪️).
-    private var shouldResetCriteria: Bool = true
+    var shouldResetCriteria: Bool = true
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -120,7 +120,41 @@ extension PasswordStatusView {
             specialCharMet
             ? specialCharCriteriaView.isCriteriaMet = true
             : specialCharCriteriaView.reset()
+        } else {
+            // Focus lost (✅ or ❌)
+            lengthCriteriaView.isCriteriaMet = lengthAndNoSpaceMet
+            uppercaseCriteriaView.isCriteriaMet = uppercaseMet
+            lowercaseCriteriaView.isCriteriaMet = lowercaseMet
+            digitCriteriaView.isCriteriaMet = numbercaseMet
+            specialCharCriteriaView.isCriteriaMet = specialCharMet
         }
     }
     
+    func reset() {
+        lengthCriteriaView.reset()
+        uppercaseCriteriaView.reset()
+        lowercaseCriteriaView.reset()
+        digitCriteriaView.reset()
+        specialCharCriteriaView.reset()
+    }
+    
+    func validate(_ text: String) -> Bool {
+        let uppercaseMet = PasswordCriteria.uppercaseMet(text)
+        let lowercaseMet = PasswordCriteria.lowercaseMet(text)
+        let digitMet = PasswordCriteria.numbercaseMet(text)
+        let specialCharacterMet = PasswordCriteria.specialCharMet(text)
+        
+        // Ready Player1 🕹
+        // Check for 3 of 4 criteria here...
+        let checkable = [uppercaseMet, lowercaseMet, digitMet, specialCharacterMet]
+        let metCriteria = checkable.filter { $0 }
+        
+        let lengthAndNoSpaceMet = PasswordCriteria.lengthAndNoSpaceMet(text)
+        
+        if lengthAndNoSpaceMet && metCriteria.count >= 3 {
+            return true
+        }
+        
+        return false
+    }
 }
