@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,6 +29,10 @@
 		012F9ABE2C5B37E800AAAEEF /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		0163EFAC2C6C9151007E9C46 /* PasswordCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteria.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		011AD5412CE45AD100E625A0 /* Utils */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Utils; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		012F9AA32C59466100AAAEEF /* Frameworks */ = {
@@ -70,6 +74,7 @@
 		012F9AA82C59466100AAAEEF /* Password */ = {
 			isa = PBXGroup;
 			children = (
+				011AD5412CE45AD100E625A0 /* Utils */,
 				012F9ABD2C59476600AAAEEF /* Files */,
 				012F9AA92C59466100AAAEEF /* AppDelegate.swift */,
 				012F9AAD2C59466100AAAEEF /* ViewController.swift */,
@@ -103,6 +108,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				011AD5412CE45AD100E625A0 /* Utils */,
 			);
 			name = Password;
 			productName = Password;
