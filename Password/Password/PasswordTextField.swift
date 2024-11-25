@@ -82,7 +82,7 @@ extension PasswordTextField {
         errorLabel.translatesAutoresizingMaskIntoConstraints = false
         errorLabel.textColor = .systemRed
         errorLabel.font = .preferredFont(forTextStyle: .footnote)
-        errorLabel.text = "Your password must meet the requirements below."
+//        errorLabel.text = "Your password must meet the requirements below."
         errorLabel.numberOfLines = 0
         errorLabel.lineBreakMode = .byWordWrapping
         errorLabel.isHidden = true
